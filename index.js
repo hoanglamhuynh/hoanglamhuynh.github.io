@@ -3,8 +3,7 @@ const http = require('http')
 const port = 3000
 
 const requestHandler = (request, response) => {
-  console.log(request.url)
-  response.end('Hello Node.js Server!')
+  response.end(`Hello Node.js Server! And the env is ${process.env.FOO}`)
 }
 
 const server = http.createServer(requestHandler)
