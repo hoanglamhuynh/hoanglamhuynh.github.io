@@ -1,0 +1,14 @@
+{
+  "AWSEBDockerrunVersion": 1,
+  "containerDefinitions": [
+    {
+      "name": "rails",
+      "image": "280815414087.dkr.ecr.us-east-1.amazonaws.com/newsroom-ai:latest"
+    }
+  ],
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ]
+}
