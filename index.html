@@ -5,70 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-  <script type='text/javascript'>
-    // Some default pre init
-    var Countly = Countly || {};
-    Countly.q = Countly.q || [];
-
-    // Provide your app key that you retrieved from Countly dashboard
-    Countly.app_key = "170d39721f00de4433fe925bb3ad25d92b9d914e";
-
-    // Provide your server IP or name. Use try.count.ly or us-try.count.ly 
-    // or asia-try.count.ly for EE trial server.
-    // If you use your own server, make sure you have https enabled if you use
-    // https below.
-    Countly.url = "https://analytics.kimwi.co"; 
-
-    // Start pushing function calls to queue
-    // Track sessions automatically (recommended)
-    Countly.q.push(['track_sessions']);
-
-    //track web page views automatically (recommended)
-    Countly.q.push(['track_pageview']);
-
-    (function() {
-        var cly = document.createElement('script'); cly.type = 'text/javascript'; 
-        cly.async = true;
-        // Enter url of script here (see below for other option)
-        cly.src = 'https://cdn.jsdelivr.net/npm/countly-sdk-web@latest/lib/countly.min.js'; // Use any of the 3 methods to get Countly Web Analytics SDK here
-        cly.onload = function(){Countly.init()};
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
-    })();
-  </script>
-
-  <!-- Matomo -->
-    <script>
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function () {
-          var u = "https://matomo.kimwi.co/";
-          _paq.push(['setTrackerUrl', u + 'matomo.php']);
-          _paq.push(['setSiteId', '1']);
-          var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-          g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
-      })();
-  </script>
-  <!-- End Matomo Code -->
 </head>
 <body>
-  Hello WOrld
-
-  <p>
-    <a href="https://tinhte.vn/">Visit Tinhte</a>
-  </p>
-  <p>
-    <a href="https://www.facebook.com/hhoanglam/">My Facebook</a>
-  </p>
-
-  <p>
-    <button type="button" onclick="_paq.push(['trackEvent', 'Acquisition', 'CTA Click', 'buy_shoes_cta']);">
-      Buy Nike shoes
-    </button>
-  </p>
-  
-  
+  <iframe src="https://www.instagram.com/p/BFKjVxkBsCC/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>  
 </body>
 </html>
